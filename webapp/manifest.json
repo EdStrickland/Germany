@@ -1,0 +1,21 @@
+{	
+	"app":{
+		"route":"http://localhost:8080/",
+		"contents":{
+			"fragments":{
+				"route":"pages/fragments/",
+				"contents":{
+					"header": {
+						"route":"header.html"
+					},
+					"footer": {
+						"route":"footer.html"
+					},
+					"index": {
+						"route":"index.html"
+					}
+				}
+			}
+		}
+	}
+}
