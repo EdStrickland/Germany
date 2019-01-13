@@ -25,6 +25,6 @@ function post (sUrl, oData, fSuccess, fError) {
 	return null;
 }
 
-function navigation() {
-	return;
+function navTo (sUrl) {
+	window.location.href = sUrl;
 }

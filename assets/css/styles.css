@@ -113,7 +113,6 @@ header .selected {
 
 main {
 	padding: 0 100px;
-	padding-top: 50px;
 
 	width: 100%;
 	height: calc(100% - 150px);	
@@ -140,6 +139,7 @@ footer {
 }
 
 .table-container h1{
+	margin-top: 100px;
 	color: #103F5E;
 }
 
@@ -206,4 +206,101 @@ td, th {
 	line-height: 44px;
 	margin: 0 3px;
 	background-color: #fff;
+}
+
+.slide {
+	margin: 0 auto;
+	width: 1000px;
+	height: 600px;
+
+	background: url("/assets/img/slide.jpg") no-repeat;
+	background-size: 100%;
+}
+
+.slide-actions {
+	margin-top: 50px;
+	height: 52px;
+	width: 100%;
+	display: flex;
+}
+
+.slide-action{
+	margin-right: 15px;
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+
+	border-radius: 3px;
+
+	text-align: center;
+	font-size: 12px;
+	text-shadow: none;
+}
+
+.slide-action:hover{
+	cursor: pointer;
+}
+
+.slide-action-sub{
+	background-color: #FFFFFF;
+	color: #3D7DA6;
+}
+
+.slide-action-main{
+	background-color: #3D7DA6;
+	color: #FFFFFF;
+}
+
+.slide-content {
+	height: 100%;
+	width: 400px;
+
+	padding-top: 180px;
+	padding-left: 50px;
+
+	color: #fff;
+	text-shadow: 2px 2px 5px rgb(63, 63, 63);
+
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* detail */
+.school-info-box {
+	display: flex;
+	width: 100%;
+	height: 240px;
+	background-color: #F2F6F9;
+	padding: 50px 100px 10px 100px;
+
+	border-bottom: 2px solid #E4E7ED;
+}
+
+.school-img-box {
+	height: 150px;
+	width: 150px;
+}
+
+.school-img-box img {
+	height: 150px;
+	width: 150px;
+}
+
+.school-info-details {
+	height: 150px;
+	width: calc(100% - 150px);
+
+	padding-left: 20px;
+}
+
+.school-info-data ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+}
+
+.school-info-data li {
+	width: 150px;
+	text-align: center;
+	text-decoration: none;
+	list-style: none;
 }
