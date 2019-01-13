@@ -3,7 +3,7 @@
 		"route":"http://seiboys.com/Germany",
 		"contents":{
 			"fragments":{
-				"route":"pages/fragments/",
+				"route":"/pages/fragments/",
 				"contents":{
 					"header": {
 						"route":"header.html"
