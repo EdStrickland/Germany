@@ -1,17 +1,15 @@
 function getPageComponent(sComponent, fSuccess, fError){
-	getPageMapping(sComponent, getSuccess, getError)
-	function getSuccess(sRoute){
+	getPageMapping(sComponent).then(function (sRoute){
 		get(sRoute, function(oData){
 			fSuccess($(oData));
 		}, function(oData){
 			console.log(oData);
 			fError(oData)
 		})
-	}
-	function getError(oData){
+	}).catch(function(oData){
 		console.log(oData);
 		fError(oData)
-	}
+	});
 }
 
 function generatePage() {

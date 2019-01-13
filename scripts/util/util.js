@@ -24,3 +24,7 @@ function post (sUrl, oData, fSuccess, fError) {
 	})
 	return null;
 }
+
+function navigation() {
+	return;
+}

@@ -13,6 +13,32 @@
 					},
 					"index": {
 						"route":"index.html"
+					},
+					"slide": {
+						"route":"slide.html"
+					},
+					"pageSection": {
+						"route":"pageSection.html"
+					},
+					"school": {
+						"route":"school/",
+						"contents": {
+							"description": {
+								"route":"description.html"
+							},
+							"info": {
+								"route":"info.html"
+							},
+							"underGraduate": {
+								"route":"underGraduate.html"
+							},
+							"postGraduate": {
+								"route":"postGraduate.html"
+							},
+							"list": {
+								"route":"list.html"
+							}
+						}
 					}
 				}
 			}
