@@ -1,6 +1,6 @@
 {	
 	"app":{
-		"route":"http://seiboys.com/",
+		"route":"http://seiboys.com/Germany",
 		"contents":{
 			"fragments":{
 				"route":"pages/fragments/",
