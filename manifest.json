@@ -1,9 +1,9 @@
 {	
 	"app":{
-		"route":"http://seiboys.com/Germany",
+		"route":"http://seiboys.com/",
 		"contents":{
 			"fragments":{
-				"route":"/pages/fragments/",
+				"route":"pages/fragments/",
 				"contents":{
 					"header": {
 						"route":"header.html"
