@@ -24,7 +24,7 @@ function generatePage() {
 		}
 	}
 	function replaceFragment(oFrame){
-		var oObj = $($("fragment")[0]).children().clone()
+		var oObj = $($("fragment")[0]).children().clone();
 		$($("fragment")[0]).after(oFrame);
 		$($("fragment")[0]).remove();
 		oFrame.append(oObj);
