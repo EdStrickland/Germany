@@ -1,0 +1,35 @@
+<header>
+	<div id="header-title"><span>header</span></div>
+	<div id="header-content">
+		<div id="header-selections">
+			<ul>
+				<li bind="index" routerLink="/index"><a><span>Home</span></a></li>
+				<li bind="info" routerLink="/info"><a><span>Schools</span></a></li>
+				<li bind="prof" routerLink="/prof"><a><span>Pros</span></a></li>
+				<li bind="rank" routerLink="/rank"><a><span>Ranks</span></a></li>
+				<li bind="news" routerLink="/news"><a><span>News</span></a></li>
+				<li bind="tips" routerLink="/tips"><a><span>Tips</span></a></li>
+			</ul>
+		</div>
+		
+		<div id="header-lists">
+			<!-- <ul>
+				<li><span>Me2</span></li>
+				<li><span>Me</span>
+					<ul class="header-item-list">
+						<li class="selected">entry1</li>
+						<li>entry2</li>
+						<li>entry3</li>
+					</ul>
+				</li>
+			</ul> -->
+		</div>
+	</div>
+</header>
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+<footer>
+	this is footer
+</footer>

@@ -1,0 +1,62 @@
+<div class="school-info-box">
+	<div class="school-img-box">
+		<img src="/assets/img/school_head.png" alt="">
+	</div>
+	<div class="school-info-details">
+		<h2>科隆商学院 Universität zu Köln</h2>
+		<div class="school-info-data">
+			<ul>
+				<li>
+					<div>
+						<h4>QS世界排名</h4>
+						<span>24</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<h4>学士项目数</h4>
+						<span>10</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<h4>硕士项目数</h4>
+						<span>12</span>
+					</div>
+				</li>
+				<li>
+					<div>
+						<h4>头牌专业</h4>
+						<span>工商管理</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="page-content">
+	<div class="page-content-changer">
+		<ul>
+			<li class="selected" (click)="changeTarget($event, 'description')"><a><span>简介</span></a></li>
+			<li (click)="changeTarget($event, 'underGraduate')"><a><span>研究生</span></a></li>
+			<li (click)="changeTarget($event, 'postGraduate')"><a><span>博士生</span></a></li>
+		</ul>
+	</div>
+	<div class="page-content-content">
+		<div class="page-content-block display" target="description">
+			<p>
+				德国科隆学院成立于。。。1
+			</p>
+		</div>
+		<div class="page-content-block" target="underGraduate">
+			<p>
+				德国科隆学院成立于。。。2
+			</p>
+		</div>
+		<div class="page-content-block" target="postGraduate">
+			<p>
+				德国科隆学院成立于。。。3
+			</p>
+		</div>
+	</div>
+</div>
