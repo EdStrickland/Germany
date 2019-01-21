@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import * as $ from 'jquery';
+
+import { Schools } from '../schools.data';
+import { School } from '../school';
 
 @Component({
   selector: 'app-detail',
@@ -7,10 +11,13 @@ import * as $ from 'jquery';
   styleUrls: ['./detail.component.styl']
 })
 export class DetailComponent implements OnInit {
-
-  constructor() { }
+  school: School;
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
+    this.getSchool();
   }
 
   changeTarget(event: any, sId: string) {
@@ -27,5 +34,10 @@ export class DetailComponent implements OnInit {
         break;
     }
     return;
+  }
+
+  getSchool() {
+    const id = +this.route.snapshot.paramMap.get('id');
+    this.school = Schools[id - 1];
   }
 }

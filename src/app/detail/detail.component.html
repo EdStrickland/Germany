@@ -3,31 +3,31 @@
 		<img src="/assets/img/school_head.png" alt="">
 	</div>
 	<div class="school-info-details">
-		<h2>科隆商学院 Universität zu Köln</h2>
+		<h2>{{school.name}}</h2>
 		<div class="school-info-data">
 			<ul>
 				<li>
 					<div>
 						<h4>QS世界排名</h4>
-						<span>24</span>
+						<span>{{school.qs}}</span>
 					</div>
 				</li>
 				<li>
 					<div>
 						<h4>学士项目数</h4>
-						<span>10</span>
+						<span>{{school.beforeGrad}}</span>
 					</div>
 				</li>
 				<li>
 					<div>
 						<h4>硕士项目数</h4>
-						<span>12</span>
+						<span>{{school.afterGrad}}</span>
 					</div>
 				</li>
 				<li>
 					<div>
 						<h4>头牌专业</h4>
-						<span>工商管理</span>
+						<span>{{school.best}}</span>
 					</div>
 				</li>
 			</ul>
@@ -45,18 +45,64 @@
 	<div class="page-content-content">
 		<div class="page-content-block display" target="description">
 			<p>
-				德国科隆学院成立于。。。1
+					{{school.detail}}
 			</p>
 		</div>
 		<div class="page-content-block" target="underGraduate">
-			<p>
-				德国科隆学院成立于。。。2
-			</p>
+			<div class="table-container">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th class=""><span class="table-ranking">排名</span></th>
+							<th class="">院校</th>
+							<th class="">授课语言</th>
+							<th class="">语言成绩</th>
+							<th class="">GMAT</th>
+							<th class="">学历背景</th>
+							<th class="">学费</th>
+						</tr>
+					</thead>
+					<tbody class="school-table">
+						<tr target="1" routerLink="/detail/1">
+							<td>1</td>
+							<td>商学研究生</td>
+							<td>德语</td>
+							<td>8</td>
+							<td>100</td>
+							<td>985</td>
+							<td>123123</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 		<div class="page-content-block" target="postGraduate">
-			<p>
-				德国科隆学院成立于。。。3
-			</p>
+			<div class="table-container">
+				<table border="0" cellpadding="0" cellspacing="0" width="100%">
+					<thead>
+						<tr>
+							<th class=""><span class="table-ranking">排名</span></th>
+							<th class="">院校</th>
+							<th class="">授课语言</th>
+							<th class="">语言成绩</th>
+							<th class="">GMAT</th>
+							<th class="">学历背景</th>
+							<th class="">学费</th>
+						</tr>
+					</thead>
+					<tbody class="school-table">
+						<tr target="1" routerLink="/detail/1">
+							<td>1</td>
+							<td>商学博士生</td>
+							<td>德语</td>
+							<td>10</td>
+							<td>102</td>
+							<td>985</td>
+							<td>123123</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	</div>
 </div>

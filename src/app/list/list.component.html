@@ -13,14 +13,14 @@
 			</tr>
 		</thead>
 		<tbody class="school-table">
-			<tr target="1" routerLink="/detail/1">
-				<td>1</td>
-				<td>科隆商学院</td>
-				<td>德语</td>
-				<td>8</td>
-				<td>100</td>
-				<td>985</td>
-				<td>123123</td>
+			<tr routerLink="/detail/{{school.id}}" *ngFor="let school of schools">
+				<td>{{school.id}}</td>
+				<td>{{school.name}}</td>
+				<td>{{school.language}}</td>
+				<td>{{school.score}}</td>
+				<td>{{school.gmat}}</td>
+				<td>{{school.colleage}}</td>
+				<td>{{school.tuition}}</td>
 			</tr>
 		</tbody>
 	</table>
